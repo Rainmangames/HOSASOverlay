@@ -104,8 +104,8 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 5px;
-    top: calc(130px); /* Position Yaw above Pitch/Roll */
-    left: 50%; /* Center horizontally */
+    top: calc(160px); /* Adjusted to position above Pitch/Roll box */
+    left: 80%; /* Adjusted to align horizontally with Pitch/Roll box */
     transform: translateX(-50%); /* Center horizontally */
     z-index: 10;
 }
