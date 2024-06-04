@@ -6,6 +6,13 @@
     font-family: 'Orbitron', sans-serif;
 }
 
+.custom .button.pressed:after {
+    background: red;
+    color: black;
+    border-color: black;
+    transition: none;
+}
+
 .custom .stick {
     width: 20px;
     height: 20px;
@@ -14,6 +21,21 @@
     position: absolute;
     transform: translate(-50%, -50%);
     border-radius: 10px;
+}
+
+.custom .button:after {
+    position: absolute;
+    display: inline-block;
+    background: black;
+    border: 2px solid hsla(193, 97%, 27%, 1);
+    color: hsla(193, 97%, 27%, 1);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 25px;
+    text-align: center;
+    white-space: nowrap;
+    transition: 5s all linear;
 }
 
 /* - END COMMON STUFF - */
@@ -58,6 +80,18 @@
     transform: translateY(-50%) rotate(-90deg);
 }
 
+.custom .stick.left {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.custom .stick.right {
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
 /* Integrating Yaw axis */
 .custom .triggers {
     width: 129px;
@@ -74,6 +108,7 @@
     padding: 5px;
     right: 0;
     top: 125px;
+    z-index: 10;
 }
 
 .custom .triggers:after {
@@ -86,22 +121,11 @@
     right: 50%;
     transform-origin: center;
     transform: translateX(50%);
+    z-index: 11;
 }
 
 .custom .abxy {
     position: absolute;
     width: 100%;
     top: 0;
-}
-
-.custom .stick.left {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.custom .stick.right {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
