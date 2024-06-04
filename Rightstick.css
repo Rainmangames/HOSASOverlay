@@ -49,7 +49,7 @@
     border-radius: 15px;
     background-image: linear-gradient(0deg, transparent 48%, #002f3b 49%, #002f3b 50%, #002f3b 51%, transparent 52%, transparent), linear-gradient(90deg, transparent 48%, #002f3b 49%, #002f3b 50%, #002f3b 51%, transparent 52%, transparent);
     top: calc(195px);
-    right: -100%;
+    left: 60%;
     transform: translateX(-100%);
     background-size: calc(100% - 15px) 100%, 100% calc(100% - 15px);
     background-repeat: no-repeat;
@@ -88,14 +88,14 @@
 
 .custom .stick.right {
     top: 50%;
-    left: 75%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
 /* Integrating Yaw axis */
 .custom .triggers {
-    width: 200px; /* Adjusted width for better visibility */
-    height: 50px; /* Adjusted height for better visibility */
+    width: 135px; /* Adjusted width for better visibility */
+    height: 30px; /* Adjusted height for better visibility */
     display: inline-block;
     background: black;
     position: absolute;
@@ -106,9 +106,9 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 5px;
-    right: 50%;
-    top: 0;
-    transform: translateX(50%);
+    left: 30%; /* Adjust position to be closer to the left */
+    top: 50px; /* Adjusted top position */
+    transform: translateX(-50%);
     z-index: 10;
 }
 
@@ -119,9 +119,9 @@
     font-size: 14px;
     color: #03b2e1;
     top: -1.5em;
-    right: 50%;
+    left: 50%;
     transform-origin: center;
-    transform: translateX(50%);
+    transform: translateX(-50%);
     z-index: 11;
 }
 
