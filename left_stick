@@ -153,6 +153,12 @@
     top: 0;
 }
 
+/*Chaff Button*/
+.custom .button.y:after{
+    content: "CHAFF";
+    right: 80px;
+    top: 0px
+}
 .custom .bumper.left:after{
     content: "BOOST";
     left: 68px;
@@ -176,7 +182,6 @@
     top: 45px;
     width: 47px
 }
-}
 
 /* FA Button */
 .custom .bumper.right:after{
@@ -187,14 +192,7 @@
     width: 49px;
     transition: none
 }
+
 /* FA Button when set to off */
 .custom .bumper.right.pressed:after{
     content: "FA OFF";
-}
-
-/*Chaff Button*/
-.custom .button.y:after{
-    content: "CHAFF";
-    right: 80px;
-    top: 0px
-}
