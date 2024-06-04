@@ -95,8 +95,6 @@
     transform: translateX(-50%);
 }
 
-
-
 .custom .sticks:after{
     content: "VERTICAL";
     display: inline-block;
