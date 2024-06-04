@@ -6,14 +6,14 @@
     font-family: 'Orbitron', sans-serif;
 }
 
-.custom .bumper.pressed:after, .custom .button.pressed:after{
+.custom .bumper.pressed:after, .custom .button.pressed:after {
     background: red;
     color: black;
     border-color: black;
-    transition: none
+    transition: none;
 }
 
-.custom .stick{
+.custom .stick {
     width: 20px;
     height: 20px;
     background: #fd1601;
@@ -23,7 +23,7 @@
     border-radius: 10px;
 }
 
-.custom .bumper:after, .custom .button:after{
+.custom .bumper:after, .custom .button:after {
     position: absolute;
     display: inline-block;
     background: black;
@@ -35,11 +35,11 @@
     border-radius: 25px;
     text-align: center;
     white-space: nowrap;
-    transition: 5s all linear
+    transition: 5s all linear;
 }
 
 /* - END COMMON STUFF - */
-.custom .sticks{
+.custom .sticks {
     width: 135px;
     height: 135px;
     display: inline-block;
@@ -57,7 +57,7 @@
     padding: 2px;
 }
 
-.custom .sticks:before{
+.custom .sticks:before {
     content: "PITCH";
     display: inline-block;
     position: absolute;
@@ -68,7 +68,7 @@
     transform: translateX(-50%);
 }
 
-.custom .sticks:after{
+.custom .sticks:after {
     content: "ROLL";
     display: inline-block;
     position: absolute;
@@ -80,52 +80,13 @@
     transform: translateY(-50%) rotate(-90deg);
 }
 
-.custom .stick.left{
+.custom .stick.left {
     top: 50%;
     left: 50%;
 }
 
-/*Hiding the unused stick*/
-.custom .stick.right{
-    display: none
-}
-
-.custom .bumpers{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.custom .abxy{
-    position: absolute;
-    width: 100%;
-    top: 0;
-}
-.custom .sticks{
-    width: 135px;
-    height: 135px;
-    display: inline-block;
-    position: relative;
-    background: black;
-    border: 2px solid #03b2e1;
-    border-radius: 15px;
-    background-image: linear-gradient(0deg, transparent 48%, #002f3b 49%, #002f3b 50%, #002f3b 51%, transparent 52%, transparent), linear-gradient(90deg, transparent 48%, #002f3b 49%, #002f3b 50%, #002f3b 51%, transparent 52%, transparent);
-    top: calc(195px);
-    right: -100%;
-    transform: translateX(-100%);
-    background-size: calc(100% - 15px) 100%, 100% calc(100% - 15px);
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 2px;
-
-    /*We keep this stuff above to make sure the other stick
-    is in the right location while we hide background.*/
-    background: none;
-    border-color: transparent;
-}
-
-/* This part makes up the background of the Yaw part */
-.custom .triggers{
+/* Integrating Yaw axis */
+.custom .triggers {
     width: 129px;
     height: 20px;
     display: inline-block;
@@ -139,11 +100,10 @@
     background-position: center;
     padding: 5px;
     right: 0;
-    top: 125px
+    top: 125px;
 }
 
-/* Here we position the title for the Yaw axis */
-.custom .triggers:after{
+.custom .triggers:after {
     content: "YAW";
     display: inline-block;
     position: absolute;
@@ -155,12 +115,19 @@
     transform: translateX(50%);
 }
 
-/* This is to hide the stick we're not using */
-.custom .stick.left{
+/* Hiding the unused stick */
+.custom .stick.right {
     display: none;
 }
-/* This is to position the Yaw pointer */
-.custom .stick.right{
-    top: calc(-55px);
-    left: 50%;
+
+.custom .bumpers {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.custom .abxy {
+    position: absolute;
+    width: 100%;
+    top: 0;
 }
