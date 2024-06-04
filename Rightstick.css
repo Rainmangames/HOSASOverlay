@@ -94,8 +94,8 @@
 
 /* Integrating Yaw axis */
 .custom .triggers {
-    width: 129px;
-    height: 20px;
+    width: 200px; /* Adjusted width for better visibility */
+    height: 50px; /* Adjusted height for better visibility */
     display: inline-block;
     background: black;
     position: absolute;
@@ -106,8 +106,9 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 5px;
-    right: 0;
-    top: 125px;
+    right: 50%;
+    top: 0;
+    transform: translateX(50%);
     z-index: 10;
 }
 
