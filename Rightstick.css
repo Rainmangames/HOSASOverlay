@@ -87,15 +87,15 @@
 }
 
 .custom .stick.right {
-    top: 50%;
+    top: calc(-55px);
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 /* Integrating Yaw axis */
 .custom .triggers {
-    width: 135px; /* Adjusted width for better visibility */
-    height: 30px; /* Adjusted height for better visibility */
+    width: 129px;
+    height: 20px;
     display: inline-block;
     background: black;
     position: absolute;
@@ -106,9 +106,8 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 5px;
-    left: 30%; /* Adjust position to be closer to the left */
-    top: 50px; /* Adjusted top position */
-    transform: translateX(-50%);
+    right: 0;
+    top: 125px;
     z-index: 10;
 }
 
@@ -119,12 +118,13 @@
     font-size: 14px;
     color: #03b2e1;
     top: -1.5em;
-    left: 50%;
+    right: 50%;
     transform-origin: center;
-    transform: translateX(-50%);
+    transform: translateX(50%);
     z-index: 11;
 }
 
+/* Ensure the ABXY buttons are positioned correctly */
 .custom .abxy {
     position: absolute;
     width: 100%;
