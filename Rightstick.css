@@ -43,14 +43,14 @@
     width: 135px;
     height: 135px;
     display: inline-block;
-    position: relative;
+    position: absolute;
     background: black;
     border: 2px solid #03b2e1;
     border-radius: 15px;
     background-image: linear-gradient(0deg, transparent 48%, #002f3b 49%, #002f3b 50%, #002f3b 51%, transparent 52%, transparent), linear-gradient(90deg, transparent 48%, #002f3b 49%, #002f3b 50%, #002f3b 51%, transparent 52%, transparent);
-    top: calc(195px);
-    right: -100%;
-    transform: translateX(-100%);
+    top: 195px;
+    left: 70%; /* Adjust this value as needed */
+    transform: translateX(-50%);
     background-size: calc(100% - 15px) 100%, 100% calc(100% - 15px);
     background-repeat: no-repeat;
     background-position: center;
@@ -86,8 +86,8 @@
 }
 
 .custom .stick.right {
-    top: 140px; /* Adjusted to position inside the Yaw box */
-    left: 75%; /* Use the same value as Pitch/Roll box */
+    top: 155px; /* Adjusted to position inside the Yaw box */
+    left: 70%; /* Use the same value as Pitch/Roll box */
     transform: translate(-50%, -50%);
 }
 
@@ -105,8 +105,8 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 5px;
-    top: 160px; /* Adjusted to position above Pitch/Roll box */
-    left: 75%; /* Use the same value as Pitch/Roll box */
+    top: 130px; /* Adjusted to position above Pitch/Roll box */
+    left: 70%; /* Use the same value as Pitch/Roll box */
     transform: translateX(-50%);
     z-index: 10;
 }
