@@ -104,9 +104,9 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 5px;
-    top: calc(195px);
-    right: -100%;
-    transform-origin: center;
+    top: calc(130px); /* Position Yaw above Pitch/Roll */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
     z-index: 10;
 }
 
