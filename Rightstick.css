@@ -39,7 +39,7 @@
 }
 
 /* - END COMMON STUFF - */
-.custom .sticks{
+.custom .sticks {
     width: 135px;
     height: 135px;
     display: inline-block;
@@ -57,7 +57,7 @@
     padding: 2px;
 }
 
-.custom .sticks:before{
+.custom .sticks:before {
     content: "PITCH";
     display: inline-block;
     position: absolute;
@@ -68,7 +68,7 @@
     transform: translateX(-50%);
 }
 
-.custom .sticks:after{
+.custom .sticks:after {
     content: "ROLL";
     display: inline-block;
     position: absolute;
@@ -80,14 +80,15 @@
     transform: translateY(-50%) rotate(-90deg);
 }
 
-.custom .stick.left{
+.custom .stick.left {
     top: 50%;
     left: 50%;
 }
 
-.custom .stick.right{
-    top: calc(-55px);
-    left: 50%;
+.custom .stick.right {
+    top: 140px; /* Adjusted to position inside the Yaw box */
+    left: 75%; /* Use the same value as Pitch/Roll box */
+    transform: translate(-50%, -50%);
 }
 
 /* Integrating Yaw axis */
@@ -104,9 +105,9 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 5px;
-    top: calc(160px); /* Adjusted to position above Pitch/Roll box */
-    left: 80%; /* Adjusted to align horizontally with Pitch/Roll box */
-    transform: translateX(-50%); /* Center horizontally */
+    top: 160px; /* Adjusted to position above Pitch/Roll box */
+    left: 75%; /* Use the same value as Pitch/Roll box */
+    transform: translateX(-50%);
     z-index: 10;
 }
 
