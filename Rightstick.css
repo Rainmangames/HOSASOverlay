@@ -58,12 +58,6 @@
     transform: translateY(-50%) rotate(-90deg);
 }
 
-.custom .stick.left {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 /* Integrating Yaw axis */
 .custom .triggers {
     width: 129px;
@@ -98,4 +92,16 @@
     position: absolute;
     width: 100%;
     top: 0;
+}
+
+.custom .stick.left {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.custom .stick.right {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
