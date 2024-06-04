@@ -48,17 +48,42 @@
     border: 2px solid #03b2e1;
     border-radius: 15px;
     background-image: linear-gradient(0deg, transparent 48%, #002f3b 49%, #002f3b 50%, #002f3b 51%, transparent 52%, transparent), linear-gradient(90deg, transparent 48%, #002f3b 49%, #002f3b 50%, #002f3b 51%, transparent 52%, transparent);
-    top: calc(195px);
-    right: -100%;
-    transform: translateX(-100%);
+    top: calc(42px);
     background-size: calc(100% - 15px) 100%, 100% calc(100% - 15px);
     background-repeat: no-repeat;
     background-position: center;
     padding: 2px;
 }
 
+.custom .triggers {
+    width: 20px;
+    height: 135px;
+    display: inline-block;
+    background: black;
+    position: relative;
+    border: 2px solid #03b2e1;
+    border-radius: 20px;
+    background-image: linear-gradient(0deg, transparent 48%, #002f3b 49%, #002f3b 50%, #002f3b 51%, transparent 52%, transparent);
+    background-size: calc(100% - 10px) 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5px;
+}
+
+.custom .triggers:after {
+    content: "THROTTLE";
+    display: inline-block;
+    position: absolute;
+    font-size: 14px;
+    color: #03b2e1;
+    top: 50%;
+    right: calc(-200%);
+    transform-origin: center;
+    transform: translateY(-50%) rotate(-90deg);
+}
+
 .custom .sticks:before {
-    content: "PITCH";
+    content: "LATERAL";
     display: inline-block;
     position: absolute;
     font-size: 15px;
@@ -69,13 +94,13 @@
 }
 
 .custom .sticks:after {
-    content: "ROLL";
+    content: "VERTICAL";
     display: inline-block;
     position: absolute;
     font-size: 15px;
     color: #03b2e1;
     top: 50%;
-    right: calc(80% + 1.25em);
+    right: calc(-30% - 1.25em);
     transform-origin: center;
     transform: translateY(-50%) rotate(-90deg);
 }
@@ -85,39 +110,9 @@
     left: 50%;
 }
 
-/* Integrating Yaw axis */
-.custom .triggers {
-    width: 129px;
-    height: 20px;
-    display: inline-block;
-    background: black;
-    position: absolute;
-    border: 2px solid #03b2e1;
-    border-radius: 20px;
-    background-image: linear-gradient(90deg, transparent 48%, #002f3b 49%, #002f3b 50%, #002f3b 51%, transparent 52%, transparent);
-    background-size: 100% calc(100% - 10px);
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 5px;
-    right: 0;
-    top: 125px;
-}
-
-.custom .triggers:after {
-    content: "YAW";
-    display: inline-block;
-    position: absolute;
-    font-size: 14px;
-    color: #03b2e1;
-    top: -1.5em;
-    right: 50%;
-    transform-origin: center;
-    transform: translateX(50%);
-}
-
-/* Hiding the unused stick */
 .custom .stick.right {
-    display: none;
+    top: calc(-120px);
+    left: 15px;
 }
 
 .custom .bumpers {
@@ -130,4 +125,50 @@
     position: absolute;
     width: 100%;
     top: 0;
+}
+
+.custom .bumper.left:after {
+    content: "BOOST";
+    left: 68px;
+}
+
+.custom .button.a:after {
+    content: "ECM";
+    right: 0;
+    width: 51px;
+}
+
+.custom .button.b:after {
+    content: "SHIELD";
+    right: 0;
+    top: 45px;
+}
+
+.custom .button.x:after {
+    content: "HEAT";
+    right: 80px;
+    top: 45px;
+    width: 47px;
+}
+
+/* FA Button */
+.custom .bumper.right:after {
+    content: "FA";
+    left: 68px;
+    top: 45px;
+    word-wrap: normal;
+    width: 49px;
+    transition: none;
+}
+
+/* FA Button when set to off */
+.custom .bumper.right.pressed:after {
+    content: "FA OFF";
+}
+
+/* Chaff Button */
+.custom .button.y:after {
+    content: "CHAFF";
+    right: 80px;
+    top: 0px;
 }
