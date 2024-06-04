@@ -6,14 +6,14 @@
     font-family: 'Orbitron', sans-serif;
 }
 
-.custom .bumper.pressed:after, .custom .button.pressed:after{
+.custom .bumper.pressed:after, .custom .button.pressed:after {
     background: red;
     color: black;
     border-color: black;
-    transition: none
+    transition: none;
 }
 
-.custom .stick{
+.custom .stick {
     width: 20px;
     height: 20px;
     background: #fd1601;
@@ -23,7 +23,7 @@
     border-radius: 10px;
 }
 
-.custom .bumper:after, .custom .button:after{
+.custom .bumper:after, .custom .button:after {
     position: absolute;
     display: inline-block;
     background: black;
@@ -35,34 +35,11 @@
     border-radius: 25px;
     text-align: center;
     white-space: nowrap;
-    transition: 5s all linear
+    transition: 5s all linear;
 }
 
 /* - END COMMON STUFF - */
-.custom .sticks{
-    width: 135px;
-    height: 135px;
-    display: inline-block;
-    position: relative;
-    background: black;
-    border: 2px solid #03b2e1;
-    border-radius: 15px;
-    background-image: linear-gradient(0deg, transparent 48%, #002f3b 49%, #002f3b 50%, #002f3b 51%, transparent 52%, transparent), linear-gradient(90deg, transparent 48%, #002f3b 49%, #002f3b 50%, #002f3b 51%, transparent 52%, transparent);
-    top: calc(195px);
-    right: -100%;
-    transform: translateX(-100%);
-    background-size: calc(100% - 15px) 100%, 100% calc(100% - 15px);
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 2px;
-
-    /*We keep this stuff above to make sure the other stick
-    is in the right location while we hide background.*/
-    background: none;
-    border-color: transparent;
-}
-
-.custom .sticks{
+.custom .sticks {
     width: 135px;
     height: 135px;
     display: inline-block;
@@ -75,11 +52,10 @@
     background-size: calc(100% - 15px) 100%, 100% calc(100% - 15px);
     background-repeat: no-repeat;
     background-position: center;
-    padding: 2px
+    padding: 2px;
 }
 
-
-.custom .triggers{
+.custom .triggers {
     width: 20px;
     height: 135px;
     display: inline-block;
@@ -91,10 +67,10 @@
     background-size: calc(100% - 10px) 100%;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 5px
+    padding: 5px;
 }
 
-.custom .triggers:after{
+.custom .triggers:after {
     content: "THROTTLE";
     display: inline-block;
     position: absolute;
@@ -106,7 +82,7 @@
     transform: translateY(-50%) rotate(-90deg);
 }
 
-.custom .sticks:before{
+.custom .sticks:before {
     content: "LATERAL";
     display: inline-block;
     position: absolute;
@@ -117,9 +93,7 @@
     transform: translateX(-50%);
 }
 
-
-
-.custom .sticks:after{
+.custom .sticks:after {
     content: "VERTICAL";
     display: inline-block;
     position: absolute;
@@ -131,68 +105,70 @@
     transform: translateY(-50%) rotate(-90deg);
 }
 
-.custom .stick.left{
+.custom .stick.left {
     top: 50%;
     left: 50%;
 }
 
-.custom .stick.right{
+.custom .stick.right {
     top: calc(-120px);
     left: 15px;
 }
 
-.custom .bumpers{
+.custom .bumpers {
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.custom .abxy{
+.custom .abxy {
     position: absolute;
     width: 100%;
     top: 0;
 }
 
-/*Chaff Button*/
-.custom .button.y:after{
-    content: "CHAFF";
-    right: 80px;
-    top: 0px
-}
-.custom .bumper.left:after{
+.custom .bumper.left:after {
     content: "BOOST";
     left: 68px;
 }
 
-.custom .button.a:after{
+.custom .button.a:after {
     content: "ECM";
     right: 0;
     width: 51px;
 }
 
-.custom .button.b:after{
+.custom .button.b:after {
     content: "SHIELD";
     right: 0;
     top: 45px;
 }
 
-.custom .button.x:after{
+.custom .button.x:after {
     content: "HEAT";
     right: 80px;
     top: 45px;
-    width: 47px
+    width: 47px;
 }
 
 /* FA Button */
-.custom .bumper.right:after{
+.custom .bumper.right:after {
     content: "FA";
     left: 68px;
     top: 45px;
     word-wrap: normal;
     width: 49px;
-    transition: none
+    transition: none;
 }
 
 /* FA Button when set to off */
-.custom .bumper.right.pressed:after{
+.custom .bumper.right.pressed:after {
     content: "FA OFF";
+}
+
+/* Chaff Button */
+.custom .button.y:after {
+    content: "CHAFF";
+    right: 80px;
+    top: 0px;
+}
