@@ -39,6 +39,7 @@
 }
 
 /* - END COMMON STUFF - */
+/* Pitch/Roll box */
 .custom .sticks {
     width: 135px;
     height: 135px;
@@ -57,6 +58,7 @@
     padding: 2px;
 }
 
+/* Pitch label */
 .custom .sticks:before {
     content: "PITCH";
     display: inline-block;
@@ -68,6 +70,7 @@
     transform: translateX(-50%);
 }
 
+/* Roll label */
 .custom .sticks:after {
     content: "ROLL";
     display: inline-block;
@@ -80,18 +83,20 @@
     transform: translateY(-50%) rotate(-90deg);
 }
 
+/* Pitch/Roll dot */
 .custom .stick.left {
     top: 50%;
     left: 50%;
 }
 
+/* Yaw dot */
 .custom .stick.right {
     top: 155px; /* Adjusted to position inside the Yaw box */
     left: 70%; /* Use the same value as Pitch/Roll box */
     transform: translate(-50%, -50%);
 }
 
-/* Integrating Yaw axis */
+/* Yaw axis box */
 .custom .triggers {
     width: 129px;
     height: 20px;
@@ -111,6 +116,7 @@
     z-index: 10;
 }
 
+/* Yaw axis label */
 .custom .triggers:after {
     content: "YAW";
     display: inline-block;
